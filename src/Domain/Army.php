@@ -59,7 +59,7 @@ final class Army
     }
 
     /**
-     * @return Card
+     * @return Character
      */
     public function drawCharacter()
     {

@@ -28,7 +28,7 @@ final class Health
      */
     public static function fromString($health)
     {
-        echo $health;
+       // echo $health;
        
         $health = (string) $health;
      //   if (! in_array($health, array_keys(static::$healths))) {
