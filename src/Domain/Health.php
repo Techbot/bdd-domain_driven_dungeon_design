@@ -6,15 +6,7 @@ final class Health
      * @var string
      */
     private $health;
-    /**
-     * @var string[]
-     */
-    private static $healths = [
-        '10',
-        '20',
-        '30',
-        '40'
-    ];
+
     /**
      * @param string $health
      */

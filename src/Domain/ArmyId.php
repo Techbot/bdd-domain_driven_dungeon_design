@@ -1,7 +1,7 @@
 <?php 
 namespace DeckOfCards\Domain;
-use Ramsey\Uuid\Uuid;
-use Ramsey\Uuid\UuidInterface;
+use Rhumsaa\Uuid\Uuid;
+use Rhumsaa\Uuid\UuidInterface;
 final class ArmyId
 {
     /**
@@ -9,9 +9,9 @@ final class ArmyId
      */
     protected $value;
     /**
-     * @param UuidInterface $value
+     * @param Uuid $value
      */
-    private function __construct(UuidInterface $value)
+    private function __construct(Uuid $value)
     {
         $this->value = $value;
     }

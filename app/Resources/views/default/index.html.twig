@@ -4,14 +4,23 @@
     <div id="wrapper">
         <div id="container">
                 <p>
-            <h1>Members</h1>
+            <h1>Begin</h1>
             <ul>
-                {% for player in army %}
-                    <li>{{ player.race|e }}</li>
+                {% for option in army %}
+                    <li>{{ option.race|e }} {{ option.health|e }} {{ option.strength|e }}</li>
                 {% endfor %}
             </ul>
                 </p>
-            </div>
+
+            <form action="/app_dev.php/accept" method="get">
+                Army Id : <input type="text" name="fname" value ="{{ armyId|e }}" >
+
+                <button type="submit" value="Submit">Accept</button>
+                <button type="reset" value="Reset">Reset</button>
+            </form>
+
+
+        </div>
         </div>
 
 {% endblock %}

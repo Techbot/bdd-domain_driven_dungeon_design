@@ -39,7 +39,7 @@ final class Character
     public static function fromString($character)
     {
         list($race, $strength, $health) = explode(',', $character);
-
+  
         return new Character(
 
             Race::fromString($race),

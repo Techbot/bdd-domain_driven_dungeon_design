@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/Unit" isTestSource="false" packagePrefix="Tests" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

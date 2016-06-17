@@ -33,13 +33,30 @@ final class Army
         return new Army(
             $armyId,
             [
-                Character::fromString('Human,10,10'),
-                Character::fromString('Dwarf,20,20'),
-                Character::fromString('Elf,10,20'),
-                Character::fromString('Halfling,10,20'),
-
+                Character::fromString("Human, " . self::random_score() . " , " . self::random_score() ),
+                Character::fromString("Dwarf, " . self::random_score() . " , " . self::random_score() ),
+                Character::fromString("Elf, " .   self::random_score() . " , " . self::random_score() ),
+                Character::fromString("Halfling, " . self::random_score() . " , " . self::random_score()),
             ]
         );
+    }
+
+    public static function random_score() {
+        STATIC $count = 0;
+        STATIC $total_stats_used = 0;
+        $number = rand(6,12);
+        If ($count ==3){
+            $number = 40 - $total_stats_used;
+        }
+        If ($count ==7){
+            $number = 80 - $total_stats_used;
+        }
+        $total_stats_used += $number;
+        If ($count ==7){
+            echo 'total ' . $total_stats_used . ' ';
+        }
+        $count++;
+        return $number;
     }
 
     /**
@@ -70,4 +87,10 @@ final class Army
     {
         shuffle($this->characters);
     }
+
+        
+
+
+
+
 }

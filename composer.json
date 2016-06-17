@@ -29,17 +29,20 @@
         "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
- 	
-    	"ramsey/uuid": "^3.0",
+        "dbellettini/eventstore-client": "^0.7.0",
+        "ramsey/uuid": "~2.8",
         "league/tactician-bundle": "^0.4.1",
         "league/tactician": "^1.0",
         "behat/behat": "^3.1",
-        "fabpot/php-cs-fixer": "^1.11",
+        "friendsofphp/php-cs-fixer": "^1.11",
         "phing/phing": "^2.14",
         "phpunit/phpunit": "^5.4",
         "squizlabs/php_codesniffer": "^2.6",
         "codeception/codeception": "^2.2",
-        "sensiolabs/security-checker": "^3.0"
+        "sensiolabs/security-checker": "^3.0",
+        "friendsofsymfony/user-bundle" : "dev-master",
+        "symfony/event-dispatcher": "^3.1",
+        "guzzlehttp/guzzle": "^6.2"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
